@@ -4,36 +4,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#F5F5F5">
 
     <TextView
+        android:id="@+id/txtTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PRODUCTOS"
-        android:textSize="28sp"
+        android:text="APLICATIVO DE FISCALIZACIÓN"
+        android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="#222222"
         android:gravity="center"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/txtSubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acta PRICE - Fiscalización"
+        android:textSize="18sp"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:layout_marginBottom="50dp" />
 
     <Button
-        android:id="@+id/btnCargar"
+        android:id="@+id/btnNuevaFiscalizacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cargar productos" />
+        android:text="NUEVA FISCALIZACIÓN"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
 
-    <ScrollView
+    <Button
+        android:id="@+id/btnVerFiscalizaciones"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="15dp">
-
-        <TextView
-            android:id="@+id/txtProductos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Presiona el botón para consultar los productos."
-            android:textSize="18sp" />
-
-    </ScrollView>
+        android:layout_height="wrap_content"
+        android:text="VER FISCALIZACIONES"
+        android:textSize="16sp" />
 
 </LinearLayout>

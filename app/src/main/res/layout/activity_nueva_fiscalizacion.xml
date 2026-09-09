@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TÍTULO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NUEVA FISCALIZACIÓN"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- I. DATOS GENERALES -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I. DATOS GENERALES"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtExpediente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expediente N.º"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtAgente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Agente fiscalizado"
+            android:inputType="textCapWords"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúÁÉÍÓÚñÑüÜ "
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtCodigoOsinergmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código Osinergmin"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtRegistroHidrocarburos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registro de Hidrocarburos N.º"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de diligencia (DD/MM/AAAA)"
+            android:inputType="number"
+            android:digits="0123456789/"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtHoraApertura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hora de apertura (HH:MM)"
+            android:inputType="number"
+            android:digits="0123456789:"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtHoraCierre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hora de cierre (HH:MM)"
+            android:inputType="number"
+            android:digits="0123456789:"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtDistrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distrito"
+            android:inputType="textCapWords"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúÁÉÍÓÚñÑüÜ -"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtProvincia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Provincia"
+            android:inputType="textCapWords"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúÁÉÍÓÚñÑüÜ -"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtDepartamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Departamento"
+            android:text="HUÁNUCO"
+            android:inputType="textCapWords"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúÁÉÍÓÚñÑüÜ -"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtRucDni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RUC / DNI"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono / Fax"
+            android:inputType="phone"
+            android:digits="0123456789+ "
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtFiscalizador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del fiscalizador"
+            android:inputType="textCapWords"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúÁÉÍÓÚñÑüÜ "
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- II. INFORMACIÓN RECABADA -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="II. INFORMACIÓN RECABADA"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtPrecioDiesel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio Diesel B5 / B5 S50"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtPrecioGasolinaRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio Gasolina Regular"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtPrecioGasolinaPremium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio Gasolina Premium"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtPrecioGasoholRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio Gasohol Regular"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtPrecioGasoholPremium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio Gasohol Premium"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- III. HECHOS VERIFICADOS -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="III. HECHOS VERIFICADOS"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtIncumplimiento1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Incumplimiento 1"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtHechos1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Hechos verificados 1"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="15dp"/>
+
+
+        <EditText
+            android:id="@+id/edtIncumplimiento2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Incumplimiento 2"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtHechos2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Hechos verificados 2"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="15dp"/>
+
+
+        <EditText
+            android:id="@+id/edtIncumplimiento3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Incumplimiento 3"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtHechos3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Hechos verificados 3"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="15dp"/>
+
+
+        <EditText
+            android:id="@+id/edtIncumplimiento4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Incumplimiento 4"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtHechos4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Hechos verificados 4"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="15dp"/>
+
+
+        <EditText
+            android:id="@+id/edtIncumplimiento5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Incumplimiento 5"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtHechos5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Hechos verificados 5"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="15dp"/>
+
+
+        <EditText
+            android:id="@+id/edtIncumplimiento6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Incumplimiento 6"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtHechos6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Hechos verificados 6"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- IV. OTROS -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IV. OTROS"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtOtrasOcurrencias"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Otras ocurrencias / observaciones"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtDocumentacion"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Documentación recabada"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtManifestaciones"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Manifestaciones / observaciones del agente"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- V. DATOS DE QUIEN RECIBE EL ACTA -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="V. DATOS DE QUIEN RECIBE EL ACTA"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtDniReceptor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DNI del receptor"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtNombreReceptor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo del receptor"
+            android:inputType="textCapWords"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúÁÉÍÓÚñÑüÜ "
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtRelacionReceptor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Relación / cargo del receptor"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- VI. DATOS DEL FISCALIZADOR -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VI. DATOS DEL FISCALIZADOR"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtDniFiscalizador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DNI del fiscalizador"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtNombreFiscalizador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo del fiscalizador"
+            android:inputType="textCapWords"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúÁÉÍÓÚñÑüÜ "
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- VII. NEGATIVA -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VII. NEGATIVA DEL AGENTE FISCALIZADO"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edtNegativa"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Indique si existió negativa y detalle"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="20dp"/>
+        <!-- VIII. FIRMA DIGITAL -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIII. FIRMA DIGITAL DEL FISCALIZADOR"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Firme dentro del recuadro"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="5dp"/>
+
+        <com.example.aplicativo_fiscalizacion.SignatureView
+            android:id="@+id/signatureView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnLimpiarFirma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIMPIAR FIRMA"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- BOTONES -->
+
+        <Button
+            android:id="@+id/btnGuardarFiscalizacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GUARDAR FISCALIZACIÓN"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnGenerarActa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GENERAR ACTA PRICE PDF"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

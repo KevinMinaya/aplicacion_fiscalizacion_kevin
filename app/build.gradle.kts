@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.producto_api_kevin"
+    namespace = "com.example.aplicativo_fiscalizacion"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.producto_api_kevin"
+        applicationId = "com.example.aplicativo_fiscalizacion"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
